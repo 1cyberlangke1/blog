@@ -127,7 +127,7 @@ git commit -m "Initial commit"
 3.  找到你刚才上传的 GitHub 仓库，点击 **Import**。
 4.  **关键设置**：
     *   Build Command: 填 `python -m mkdocs build`。
-    *   Output Directory: 填 `site`，不用改。
+    *   Output Directory: 填 `site`
 5.  点击 **Deploy**。
 
 等待 30 秒，Vercel 会给你一个 `https://your-blog.vercel.app` 的网址。恭喜，博客上线了！
