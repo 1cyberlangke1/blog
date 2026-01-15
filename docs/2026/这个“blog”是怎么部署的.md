@@ -82,10 +82,12 @@ docs/
 ```
 
 **2. 它是怎么识别标题的？**
+
 *   **方法A（推荐）：** 只要你的 `.md` 文件第一行是 `# 我是标题`，MkDocs 就会自动提取这几个字作为侧边栏的标题。
 *   **方法B（懒人）：** 如果你连 `#` 都不写，它会直接用文件名（去掉.md）作为标题。
 
 **3. 本地预览**
+
 在终端里输入：
 ```bash
 mkdocs serve
@@ -99,13 +101,15 @@ mkdocs serve
 为了让别人能访问，我们需要把代码推送到 GitHub，然后用 Vercel 免费托管。
 
 **1. 准备依赖文件（这是坑点，一定要做！）**
+
 Vercel 需要知道你的博客是用什么生成的。在 `my-blog` 根目录下，新建一个名为 `requirements.txt` 的文件，内容只有一行：
 
 ```text
 mkdocs-material
 ```
 
-**2. 推送到 GitHub**
+**2. 推送到 GitHub** 
+
 在 `my-blog` 目录下执行：
 ```bash
 git init
@@ -116,8 +120,9 @@ git commit -m "Initial commit"
 # git push -u origin main
 ```
 
-**3. 在 Vercel 上导入**
-1.  去 [Vercel 官网](https://vercel.com) 注册登录。
+**3. 在 Vercel 上导入** 
+
+1.  去 [Vercel 官网](https://vercel.com) 注册登录。 
 2.  点击 **"Add New..."** -> **"Project"**。
 3.  找到你刚才上传的 GitHub 仓库，点击 **Import**。
 4.  **关键设置**：
