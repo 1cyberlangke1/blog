@@ -90,7 +90,7 @@ docs/
 
 在终端里输入：
 ```bash
-mkdocs serve
+mkdocs serve --livereload
 ```
 浏览器打开 `http://127.0.0.1:8000`，你就能看到效果了。改动文件保存后，网页会自动刷新。
 
